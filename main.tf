@@ -16,7 +16,6 @@ resource "google_compute_instance" "gcp_compute" {
 
   network_interface {
     network = "default"
-    access_config {}
   }
 
   labels = {
