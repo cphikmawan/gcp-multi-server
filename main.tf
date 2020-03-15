@@ -20,9 +20,7 @@ resource "google_compute_instance" "gcp_compute" {
 
   labels = {
     env           = var.environment
-    hostname      = var.compute_name
     service_group = var.service_group
-    service_name  = var.compute_name
     service_type  = var.service_type
   }
 
